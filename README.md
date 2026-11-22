@@ -41,9 +41,9 @@ The choices made, and why:
 - **One row for each name.** A white key has one name. A black key has two, after the white keys on either side of
   it: the one below sharpened and the one above flattened (C♯ and D♭ are the same key). Each name is a row of its own,
   with the same key. So:
-  - shown a black key lit, both names are right and both are asked for. Offered a few names, choosing both is right,
-    and one of them is partly right with the other marked *Missed*. After the answer both names are shown, each with
-    the key;
+  - shown a black key lit, both names are right. Offered a few names to choose from, both are asked for: choosing
+    both is right, one of them is partly right with the other marked *Missed*. Typed in the open, one name is taken
+    and marked right (the app takes one value there). Either way both names are shown afterwards, each with the key;
   - shown *D♭*, you play that key; shown *C♯*, the same key. Each name is asked on its own, so each is learned on its
     own, not only as half of a pair;
   - the key column writes each row's key in its own spelling (`D♭4` in the D♭ row).
@@ -65,21 +65,24 @@ The choices made, and why:
 
 ## How it behaves in the app
 
-Checked in Knack at `0781e9d` (after #36 and #39), practising both decks both ways at phone size (390×844) in
-Chromium and WebKit. knack-chords#2 has the screenshots and the details.
+Checked in Knack at `0781e9d` (after #36 and #39) by practising both decks both ways, about 650 questions at phone
+size (390×844) in Chromium and WebKit, answering from the theory and now and then wrongly on purpose. In *Name the
+key* every one of the 27 keys came up lit, and every name was asked and played, in more than one octave.
+`build/screenshots/` has what it looks like.
 
 - Rows that share a name are one value: *C* is offered once, never twice, and a C played in any octave is right.
 - Rows that show the same key are one question: a lit C♯4 asks for C♯ and D♭ together, and choosing both is right.
+- Nothing was offered twice, and no right answer was marked partly right, *Missed* or wrong.
 - Some of what the app does with this table is not what a learner should see. These are the app's to change, not
-  the table's, and are written up on knack-chords#2 with their causes:
-  - shown a name and offered a few keyboards, it says *Tap all that match* though only one is right (the learner
-    model counts the asked column's values as written, not in the column's own sense, so C3 and C5 are two values to
-    it);
-  - naming a black key in the open (typing), only one name can be given, so the best answer is partly right;
+  the table's, and are written up with their causes on
+  [knack-chords#2](https://github.com/lorien-danger/knack-chords/issues/2):
+  - shown a name and offered a few keyboards, it says *Tap all that match* though only one is right;
   - while a question is asked, the keyboard writes *C4* and *C5* on the Cs, which answers every question about a C
     and every question of the octave deck;
-  - after an answer, a key is named as most of the column spells it (*F♯*), not as the row asked (*G♭*); and a right
-    answer in another octave is shown at the row's key, not the key played.
+  - after an answer, a key is named as most of the column spells it (*A♯*), not as the row asked (*B♭*): *B in place
+    of A♯* for a question about B♭;
+  - a right answer in another octave is shown at the row's key, not the key played (D5 played, D4 shown);
+  - naming a black key in the open, only one of its names can be given.
 
 ## Checks
 

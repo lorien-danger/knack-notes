@@ -19,7 +19,7 @@ const ROOT = join(import.meta.dirname, '..');
 const LETTERS = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
 const NATURAL = [0, 2, 4, 5, 7, 9, 11];
 
-/** a key as a MIDI number (middle C, C4, is 60), and the range: F3 to G5, the 37 keys of an FM-1 */
+/** a key as a MIDI number (middle C, C4, is 60), and the range: F3 to G5, the 27 keys of an FM-1's keyboard */
 const LOWEST = 53; // F3
 const HIGHEST = 79; // G5
 

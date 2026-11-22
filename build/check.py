@@ -7,7 +7,7 @@ over and over from the bottom (A0), with a black key between every two neighbour
 E and F (the gaps that make the groups of two and three black keys). A black key is named after both white keys
 beside it: the one below sharpened and the one above flattened. Octave numbers start again at every C, and the
 fourth C from the bottom is middle C, C4 (the 40th key; A4, the 49th, is 440 Hz). Then:
-  - the rows are exactly the keys from F3 to G5, the FM-1's 37 keys, each once under each of its names: one row for
+  - the rows are exactly the keys from F3 to G5, the 27 keys of an FM-1's keyboard, each once under each of its names: one row for
     a white key, two for a black key, and no other spellings (no E♯, F♭, B♯, C♭, double sharps or double flats);
   - each row's key is written as its name and octave, and is that key on the keyboard (its place in the 88, and its
     pitch in Hz, worked out from the note's name alone, with no table of semitones);

@@ -65,9 +65,9 @@ The choices made, and why:
 
 ## How it behaves in the app
 
-Checked in Knack at `0781e9d` (after #36 and #39) by practising both decks both ways, about 650 questions at phone
+Checked in Knack at `0781e9d` (after #36 and #39) by practising both decks both ways, about 690 questions at phone
 size (390×844) in Chromium and WebKit, answering from the theory and now and then wrongly on purpose. In *Name the
-key* every one of the 27 keys came up lit, and every name was asked and played, in more than one octave.
+key* every name was asked and played in more than one octave, and all 27 keys came up lit (in WebKit 25 of them).
 `build/screenshots/` has what it looks like.
 
 - Rows that share a name are one value: *C* is offered once, never twice, and a C played in any octave is right.

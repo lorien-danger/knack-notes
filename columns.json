@@ -1,0 +1,51 @@
+{
+ "name": "Notes",
+ "item": "key",
+ "items": "keys",
+ "title": "full name",
+ "practices": [
+  {
+   "name": "Name the key",
+   "columns": [
+    "name",
+    "key"
+   ]
+  },
+  {
+   "name": "Name the key, octave and all",
+   "columns": [
+    "full name",
+    "place"
+   ]
+  }
+ ],
+ "columns": [
+  {
+   "name": "name",
+   "type": "plain",
+   "label": "Name"
+  },
+  {
+   "name": "key",
+   "type": "notes",
+   "octave": false,
+   "label": "Key"
+  },
+  {
+   "name": "also",
+   "type": "plain",
+   "label": "Also called"
+  },
+  {
+   "name": "full name",
+   "type": "plain",
+   "label": "Name and octave"
+  },
+  {
+   "name": "place",
+   "type": "notes",
+   "octave": true,
+   "label": "Key, in its octave"
+  }
+ ]
+}

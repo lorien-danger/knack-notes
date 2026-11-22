@@ -19,7 +19,7 @@ same between them is the name.
 Suggested decks (a deck is asked every way round, so each of these is both directions):
 
 - **Name the key:** see a key lit, say its name (both names, for a black key); see a name, play it anywhere.
-- **Name the key and its octave:** the same with the octave: see a key lit, say *C4*; see *G♭3*, play that very key.
+- **Name the key and octave:** the same with the octave: see a key lit, say *C4*; see *G♭3*, play that very key.
   For later, once the names come without thinking.
 
 There are no sounds of its own: the app's keyboard plays a key on its piano when it is shown or tapped.
@@ -58,7 +58,7 @@ The choices made, and why:
 - **Which octave counts.** In *Name the key* the key column has `"octave": false`: the keys are written with their
   octaves (`C4`, `C5`) so that each is lit at its own place, but playing any C is right for *C*. So a C is shown at
   different places on different questions, and the name is learned wherever it is, not as one drawing.
-- **The octave deck.** *Name the key and its octave* uses `full name` and `place` (`"octave": true`): the same keys,
+- **The octave deck.** *Name the key and octave* uses `full name` and `place` (`"octave": true`): the same keys,
   where now the octave counts. Octaves are numbered as in the app and most music software: each octave starts on C,
   and middle C is C4. This keyboard has C4 in its middle, F3 to B3 below it and C5 to G5 above. It is a later step,
   so it is the second deck, and its columns are not in the first.

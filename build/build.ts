@@ -64,7 +64,7 @@ const columns = {
 	title: 'full name',
 	practices: [
 		{ name: 'Name the key', columns: ['name', 'key'] },
-		{ name: 'Name the key and its octave', columns: ['full name', 'place'] },
+		{ name: 'Name the key and octave', columns: ['full name', 'place'] },
 	],
 	columns: [
 		{ name: 'name', type: 'plain', label: 'Name' },

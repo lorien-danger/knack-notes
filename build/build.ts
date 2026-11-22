@@ -46,12 +46,10 @@ const rows: Record<string, unknown>[] = [];
 for (let key = LOWEST; key <= HIGHEST; key++) {
 	const names = namesOf(key), octave = octaveOf(key);
 	for (const name of names) {
-		const other = names.find((n) => n !== name);
 		rows.push({
 			id: idOf(name, octave),
 			name,
 			key: name + octave,
-			...(other ? { also: other } : {}),
 			'full name': name + octave,
 			place: name + octave,
 		});
@@ -66,12 +64,11 @@ const columns = {
 	title: 'full name',
 	practices: [
 		{ name: 'Name the key', columns: ['name', 'key'] },
-		{ name: 'Name the key, octave and all', columns: ['full name', 'place'] },
+		{ name: 'Name the key and its octave', columns: ['full name', 'place'] },
 	],
 	columns: [
 		{ name: 'name', type: 'plain', label: 'Name' },
 		{ name: 'key', type: 'notes', octave: false, label: 'Key' },
-		{ name: 'also', type: 'plain', label: 'Also called' },
 		{ name: 'full name', type: 'plain', label: 'Name and octave' },
 		{ name: 'place', type: 'notes', octave: true, label: 'Key, in its octave' },
 	],
@@ -79,5 +76,5 @@ const columns = {
 
 writeFileSync(join(ROOT, 'columns.json'), JSON.stringify(columns, null, 1) + '\n');
 writeFileSync(join(ROOT, 'rows.jsonl'), rows.map((r) => JSON.stringify(r)).join('\n') + '\n');
-const black = rows.filter((r) => r.also).length / 2;
+const black = rows.filter((r) => String(r.name).length > 1).length / 2;
 console.log(`${rows.length} rows: ${HIGHEST - LOWEST + 1} keys from F3 to G5, ${HIGHEST - LOWEST + 1 - black} white with one name and ${black} black with two`);

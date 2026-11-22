@@ -12,7 +12,7 @@
    ]
   },
   {
-   "name": "Name the key, octave and all",
+   "name": "Name the key and its octave",
    "columns": [
     "full name",
     "place"
@@ -30,11 +30,6 @@
    "type": "notes",
    "octave": false,
    "label": "Key"
-  },
-  {
-   "name": "also",
-   "type": "plain",
-   "label": "Also called"
   },
   {
    "name": "full name",
